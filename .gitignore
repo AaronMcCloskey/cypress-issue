@@ -40,3 +40,9 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# ignore cypress e2e helper files, screenshot & videos
+/cypress/screenshots/**
+/cypress/videos/**
+**/1-getting-started/*
+**/2-advanced-examples/*
