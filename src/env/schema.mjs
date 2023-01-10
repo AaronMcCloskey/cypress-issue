@@ -21,6 +21,8 @@ export const serverSchema = z.object({
   ),
   GOOGLE_CLIENT_ID: z.string(),
   GOOGLE_CLIENT_SECRET: z.string(),
+  GOOGLE_LOGIN_EMAIL: z.string(),
+  GOOGLE_LOGIN_PASSWORD: z.string(),
 });
 
 /**
@@ -35,6 +37,8 @@ export const serverEnv = {
   NEXTAUTH_URL: process.env.NEXTAUTH_URL,
   GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
   GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET,
+  GOOGLE_LOGIN_EMAIL: process.env.GOOGLE_LOGIN_EMAIL,
+  GOOGLE_LOGIN_PASSWORD: process.env.GOOGLE_LOGIN_PASSWORD,
 };
 
 /**
